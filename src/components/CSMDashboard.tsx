@@ -218,7 +218,7 @@ export default function CSMDashboard() {
     <div className="flex h-screen w-full bg-yd-bg font-sans text-yd-text-primary overflow-hidden">
       
       {/* Sidebar */}
-      <div className="w-[272px] min-w-[272px] bg-yd-surface border-r border-yd-border flex flex-col z-10">
+      <div className="w-[272px] min-w-[272px] bg-[#F5F4F0] border-r border-[rgba(0,0,0,0.08)] flex flex-col z-10">
         
         {/* Sidebar Header */}
         <div className="pt-[18px] px-[16px] pb-[12px] border-b border-yd-border">
@@ -281,7 +281,7 @@ export default function CSMDashboard() {
       </div>
 
       {/* Main Panel */}
-      <div className="flex-1 flex flex-col min-w-0 bg-yd-bg">
+      <div className="flex-1 flex flex-col min-w-0 bg-white border-l border-[rgba(0,0,0,0.08)]">
         
         {/* Main Header */}
         <div className="px-[20px] py-[16px] bg-yd-surface border-b border-yd-border flex items-center justify-between">
@@ -302,7 +302,7 @@ export default function CSMDashboard() {
           {/* Signals Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-[8px]">
             {selectedAccount.signals.map((signal, idx) => (
-              <div key={idx} className="bg-[#F0EEE9] rounded-[6px] px-[12px] py-[10px]">
+              <div key={idx} className="bg-white border border-[rgba(0,0,0,0.08)] rounded-[6px] px-[12px] py-[10px] shadow-[0_1px_3px_rgba(0,0,0,0.07),0_4px_12px_rgba(0,0,0,0.05)]">
                 <div className="text-[9px] uppercase tracking-[0.05em] text-yd-text-secondary font-mono">{signal.label}</div>
                 <div className="text-[22px] font-semibold text-yd-text-primary mt-[2px]">{signal.value}</div>
                 <div className={clsx(
