@@ -218,7 +218,7 @@ export default function CSMDashboard() {
     <div className="flex h-screen w-full bg-yd-bg font-sans text-yd-text-primary overflow-hidden">
       
       {/* Sidebar */}
-      <div className="w-[272px] min-w-[272px] bg-[#F5F4F0] border-r border-[rgba(0,0,0,0.08)] flex flex-col z-10">
+      <div className="w-[272px] min-w-[272px] bg-yd-surface border-r border-yd-border flex flex-col z-10">
         
         {/* Sidebar Header */}
         <div className="pt-[18px] px-[16px] pb-[12px] border-b border-yd-border">
